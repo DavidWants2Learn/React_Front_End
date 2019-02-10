@@ -1,7 +1,6 @@
 import React from 'react'
 const appSatrt = require('../../../main')
 
-
 export function generate(_this) {
     return <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul className="navbar-nav"> 

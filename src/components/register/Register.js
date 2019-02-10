@@ -10,7 +10,7 @@ class Register extends Component {
         <div style={{marginLeft:-100, marginTop: 15}}>  
             <form onSubmit={event => {
               event.preventDefault()
-              
+
               const userName = event.target.userName.value
               const password = event.target.password.value
               const passwordRepeat = event.target.passwordRepeat.value

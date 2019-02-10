@@ -52,10 +52,7 @@ class SignIn extends Component {
             </form> : 
             <Register />
         }
-
-
-            
-
+        
             <div style={{marginTop: -25}}>
             {footer.generate()}
             </div>

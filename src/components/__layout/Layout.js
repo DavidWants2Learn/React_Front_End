@@ -5,8 +5,6 @@ import Register from '../register/Register'
 const navBarElement = require('./elements/NavBar')
 const footerElement = require('./elements/Footer')
 
-
-
 require('./Layout.css')
 
 class Layout extends Component {
