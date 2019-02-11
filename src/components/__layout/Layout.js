@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
-import Outreach from '../outreach/Outreach'
-import Register from '../register/Register'
+import HomePage from '../HomePage/HomePage'
 
 const navBarElement = require('./elements/NavBar')
 const footerElement = require('./elements/Footer')
-
-
-
-require('./Layout.css')
 
 class Layout extends Component {
     constructor(props) {
@@ -15,7 +10,7 @@ class Layout extends Component {
 
         this.state = {
           'components' : [
-            { 'name': 'Register', 'visible': true, 'reference': Register }
+            { 'name': 'Home', 'visible': true, 'reference': HomePage }
           ]
         }
 
@@ -33,7 +28,7 @@ class Layout extends Component {
           <section>
             {navBarElement.generate(this)}
           </section>  
-          <section className='pad15pxFromLeft pad15pxFromTop'>
+          <section>
             {this.renderVisibleComponents()}
           </section>  
           <section>

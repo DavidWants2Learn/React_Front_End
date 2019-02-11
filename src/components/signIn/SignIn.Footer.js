@@ -6,7 +6,7 @@ export function generate(_this) {
                 <div className="container-fluid">
                     <hr />
                     <footer>
-                        <p>&copy; {new Date().toDateString()} - Some Application</p>
+                        <p>&copy; {new Date().toDateString()} - Net Ninjas</p>
                     </footer>
                 </div>
             </section> 

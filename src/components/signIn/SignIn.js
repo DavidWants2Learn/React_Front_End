@@ -1,22 +1,26 @@
 import React, { Component } from 'react'
+import Register from "../register/Register"
+
 
 const restartApp = require('../../main')
 const footer = require('./SignIn.Footer')
 const navBar = require('./SignIn.NavBar')
 
-
 class SignIn extends Component {
     constructor(props) {
         super(props)
 
+        this.state = {
+            Register: false
+        }
     }
 
     render() {
-       
-
       return (
         <div>  
             {navBar.generate()}
+
+            {!this.state.Register ? 
             <form onSubmit={event => {
                 event.preventDefault()
                 const userName = event.target.userName.value
@@ -40,9 +44,27 @@ class SignIn extends Component {
                     placeholder="Password"/>
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
-                <button style={{marginLeft: 15}} className="btn btn-success">Register</button>
-            </form>
+                <button style={{marginLeft: 15}} 
+                onClick={event => {
+                    this.setState({Register: true})
+                }}
+                className="btn btn-success">Register</button>
+            </form> : 
+            <div>
+                <Register />
+                <div className="container signin" style={{marginLeft: 45}}>
+                    <p onClick={ event => {
+                        this.state.Register = false
+                        this.forceUpdate()
+                    }
+                    }>
+                    Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+            </div>    
+        }
+            
 
+        
             <div style={{marginTop: -25}}>
             {footer.generate()}
             </div>

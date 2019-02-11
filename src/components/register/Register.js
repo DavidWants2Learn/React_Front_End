@@ -3,14 +3,21 @@ import React, { Component } from 'react'
 class Register extends Component {
     constructor(props) {
         super(props)
-
     }
 
     render() {
       return (
-        <div>  
+        <div style={{marginLeft:-100, marginTop: 15}}>  
             <form onSubmit={event => {
               event.preventDefault()
+
+              const userName = event.target.userName.value
+              const password = event.target.password.value
+              const passwordRepeat = event.target.passwordRepeat.value
+
+              console.log(userName)
+              console.log(password)
+              console.log(passwordRepeat)
             }}>
               <div className="container">
                 <h1>Register</h1>
@@ -19,27 +26,27 @@ class Register extends Component {
 
                 <label htmlFor="email"><b>Email</b></label>
                 <br/>
-                <input type="text" placeholder="Enter Email" name="email" required/>
+                <input type="text" placeholder="Username" 
+                name="userName" required/>
                 <br/>
                 <br/>
                 <label htmlFor="psw"><b>Password</b></label>
                 <br/>
-                <input type="password" placeholder="Enter Password" name="psw" required/>
+                <input type="password" placeholder="Enter Password" 
+                name="password" required/>
 
                 <br/>
                 <br/>
                 <label htmlFor="psw-repeat"><b>Repeat Password</b></label>
                 <br/>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required/>
+                <input type="password" placeholder="Repeat Password" 
+                name="passwordRepeat" required/>
                 <hr/>
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-                <button type="submit" className="registerbtn">Register</button>
+                <button type="submit" 
+                className="registerbtn">Register</button>
               </div>
               <br/>
-              <div className="container signin">
-                <p>Already have an account? <a href="#">Sign in</a>.</p>
-              </div>
             </form>
         </div>
       );
