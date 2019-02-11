@@ -4,11 +4,6 @@ import HomePage from '../HomePage/HomePage'
 const navBarElement = require('./elements/NavBar')
 const footerElement = require('./elements/Footer')
 
-<<<<<<< HEAD
-require('./Layout.css')
-
-=======
->>>>>>> 574260fb9eb363b87498f78e5bde71563747a842
 class Layout extends Component {
     constructor(props) {
         super(props)

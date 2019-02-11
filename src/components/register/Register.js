@@ -26,33 +26,21 @@ class Register extends Component {
 
                 <label htmlFor="email"><b>Email</b></label>
                 <br/>
-<<<<<<< HEAD
-                <input type="text" placeholder="Username" name="userName" required/>
-=======
                 <input type="text" placeholder="Username" 
                 name="userName" required/>
->>>>>>> 574260fb9eb363b87498f78e5bde71563747a842
                 <br/>
                 <br/>
                 <label htmlFor="psw"><b>Password</b></label>
                 <br/>
-<<<<<<< HEAD
-                <input type="password" placeholder="Enter Password" name="password" required/>
-=======
                 <input type="password" placeholder="Enter Password" 
                 name="password" required/>
->>>>>>> 574260fb9eb363b87498f78e5bde71563747a842
 
                 <br/>
                 <br/>
                 <label htmlFor="psw-repeat"><b>Repeat Password</b></label>
                 <br/>
-<<<<<<< HEAD
-                <input type="password" placeholder="Repeat Password" name="passwordRepeat" required/>
-=======
                 <input type="password" placeholder="Repeat Password" 
                 name="passwordRepeat" required/>
->>>>>>> 574260fb9eb363b87498f78e5bde71563747a842
                 <hr/>
 
                 <button type="submit" 
