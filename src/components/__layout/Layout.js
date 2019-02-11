@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
-import Outreach from '../outreach/Outreach'
-import Register from '../register/Register'
+import HomePage from '../HomePage/HomePage'
 
 const navBarElement = require('./elements/NavBar')
 const footerElement = require('./elements/Footer')
 
+<<<<<<< HEAD
 require('./Layout.css')
 
+=======
+>>>>>>> 574260fb9eb363b87498f78e5bde71563747a842
 class Layout extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
           'components' : [
-            { 'name': 'Register', 'visible': true, 'reference': Register }
+            { 'name': 'Home', 'visible': true, 'reference': HomePage }
           ]
         }
 
@@ -31,7 +33,7 @@ class Layout extends Component {
           <section>
             {navBarElement.generate(this)}
           </section>  
-          <section className='pad15pxFromLeft pad15pxFromTop'>
+          <section>
             {this.renderVisibleComponents()}
           </section>  
           <section>

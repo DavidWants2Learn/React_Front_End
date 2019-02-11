@@ -23,19 +23,22 @@ export function generate(_this) {
                                 </li>
                     })
             }
-            <li style={{paddingLeft: 1050}}
-            className="nav-item active" >
-                                    <a 
-                                    className="nav-link" href="#"   
-                                        onClick={(e) => {
-                                            localStorage.removeItem('auth')       
-                                            appSatrt.startApp()
-                                            _this.forceUpdate()                         
-                                        }}>
-                                        
-                                       Sign Out
-                                    </a>
-                                </li>
+        </ul>
+
+        <ul className="nav navbar-nav ml-auto">
+        <li style={{float:'right'}}
+                className="nav-item active" >
+                    <a 
+                    className="nav-link" href="#"   
+                        onClick={(e) => {
+                            localStorage.removeItem('auth')       
+                            appSatrt.startApp()
+                            _this.forceUpdate()                         
+                        }}>
+                        
+                        Sign Out
+                    </a>
+            </li>
         </ul>
     </nav> 
 }

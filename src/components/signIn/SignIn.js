@@ -56,7 +56,7 @@ class SignIn extends Component {
             <div style={{marginTop: -25}}>
             {footer.generate()}
             </div>
-            
+
         </div>
       );
     }
