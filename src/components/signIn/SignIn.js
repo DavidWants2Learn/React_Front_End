@@ -52,7 +52,7 @@ class SignIn extends Component {
             </form> : 
             <div>
                 <Register />
-                <div className="container signin" style={{marginLeft: 45}}>
+                <div className="container signin" style={{marginLeft: 10}}>
                     <p onClick={ event => {
                         this.state.Register = false
                         this.forceUpdate()
