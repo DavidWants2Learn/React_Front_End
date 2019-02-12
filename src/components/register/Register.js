@@ -7,7 +7,7 @@ class Register extends Component {
 
     render() {
       return (
-        <div style={{marginLeft:-100, marginTop: 15}}>  
+        <div >  
             <form onSubmit={event => {
               event.preventDefault()
 
@@ -19,7 +19,7 @@ class Register extends Component {
               console.log(password)
               console.log(passwordRepeat)
             }}>
-              <div className="container">
+              <div style={{margin: 20}}>
                 <h1>Register</h1>
                 <p>Please fill in this form to create an account.</p>
                 <hr/>
