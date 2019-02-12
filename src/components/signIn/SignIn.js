@@ -50,7 +50,17 @@ class SignIn extends Component {
                 }}
                 className="btn btn-success">Register</button>
             </form> : 
-            <Register />
+            <div>
+                <Register />
+                <div className="container signin" style={{marginLeft: 10}}>
+                    <p onClick={ event => {
+                        this.state.Register = false
+                        this.forceUpdate()
+                    }
+                    }>
+                    Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+            </div>    
         }
         
             <div style={{marginTop: -25}}>
