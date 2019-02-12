@@ -14,10 +14,7 @@ class Register extends Component {
               const userName = event.target.userName.value
               const password = event.target.password.value
               const passwordRepeat = event.target.passwordRepeat.value
-
-              console.log(userName)
-              console.log(password)
-              console.log(passwordRepeat)
+              s
             }}>
               <div style={{margin: 20}}>
                 <h1>Register</h1>
