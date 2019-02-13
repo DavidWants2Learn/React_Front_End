@@ -43,16 +43,13 @@ class SignIn extends Component {
                     name="password"
                     placeholder="Password"/>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Login</button>
                 <button style={{marginLeft: 15}} 
                 onClick={event => {
                     this.setState({Register: true})
                 }}
                 className="btn btn-success">Register</button>
             </form> : 
-<<<<<<< HEAD
-            <Register />
-=======
             <div>
                 <Register />
                 <div className="container signin" style={{marginLeft: 10}}>
@@ -64,7 +61,7 @@ class SignIn extends Component {
                     Already have an account? <a href="#">Sign in</a>.</p>
                 </div>
             </div>    
->>>>>>> 7e423b72d4dfc624389b8c554c9920b4b586b8d1
+
         }
         
             <div style={{marginTop: -25}}>
